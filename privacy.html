@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası · İslam Dünyam</title>
+<meta name="description" content="İslam Dünyam yayın aracının gizlilik politikası.">
+<style>
+  :root{
+    --ink:#0a1a18; --ink-2:#17362f; --cream:#fffcf0;
+    --gold:#c6a96d; --muted:#b9c4bf; --line:rgba(198,169,109,.28);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:linear-gradient(170deg,var(--ink),var(--ink-2));
+    color:var(--cream); min-height:100vh;
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.75;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:64px 16px 72px}
+  .back{display:inline-block; color:var(--gold); font-size:.92rem;
+        text-decoration:none; margin-bottom:28px}
+  .back:hover{text-decoration:underline}
+  h1{font-size:1.95rem; margin:0 0 4px}
+  .date{color:#7e8d88; font-size:.88rem; margin:0 0 36px}
+  h2{font-size:1.12rem; color:var(--gold); margin:34px 0 10px; font-weight:600}
+  p,li{color:var(--muted)}
+  p{margin:0 0 14px}
+  ul{padding-left:20px; margin:0 0 14px}
+  li{margin:7px 0}
+  a{color:var(--cream)}
+  strong{color:var(--cream); font-weight:600}
+  .box{border:1px solid var(--line); border-radius:12px; padding:18px 20px;
+       background:rgba(198,169,109,.05); margin:26px 0}
+  .box p:last-child{margin:0}
+  footer{text-align:center; color:#7e8d88; font-size:.85rem; margin-top:52px}
+  @media (max-width:520px){ h1{font-size:1.6rem} .wrap{padding:44px 16px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">&larr; İslam Dünyam</a>
+
+  <h1>Gizlilik Politikası</h1>
+  <p class="date">Son güncelleme: 9 Ekim 2026</p>
+
+  <p>
+    İslam Dünyam, Kur'an-ı Kerim ayetlerinden kısa videolar üretip sahibinin
+    kendi sosyal medya hesaplarında yayınlayan <strong>kişisel bir otomasyon
+    aracıdır</strong>. Herkese açık bir hizmet değildir; yalnızca geliştiricisi
+    tarafından, yalnızca kendi hesapları üzerinde kullanılır.
+  </p>
+
+  <div class="box">
+    <p>
+      <strong>Özetle:</strong> Bu araç hiçbir kullanıcıdan veri toplamaz,
+      saklamaz veya üçüncü taraflarla paylaşmaz. Ziyaretçi kaydı tutmaz,
+      çerez kullanmaz, hesap açtırmaz.
+    </p>
+  </div>
+
+  <h2>Toplanan veriler</h2>
+  <p>
+    <strong>Hiçbir kişisel veri toplanmaz.</strong> Aracın kullanıcı girişi,
+    kayıt formu, yorum alanı veya iletişim formu yoktur. Bu web sitesi statik
+    sayfalardan oluşur; analiz aracı, reklam izleyicisi veya çerez kullanmaz.
+  </p>
+
+  <h2>Google kullanıcı verilerine erişim</h2>
+  <p>
+    Araç, YouTube Data API v3 üzerinden yalnızca <strong>kendi sahibinin
+    YouTube kanalına video yüklemek</strong> için yetki ister. Kullanılan tek
+    izin kapsamı:
+  </p>
+  <ul>
+    <li><code>https://www.googleapis.com/auth/youtube.upload</code> — kanala video yükleme</li>
+  </ul>
+  <p>
+    Bu yetki yalnızca hesap sahibinin kendisi tarafından, kendi hesabı için
+    verilir. Araç başka kullanıcıların Google hesaplarına erişmez, erişim
+    talep etmez.
+  </p>
+  <p>
+    Yetkilendirme sonucu alınan erişim anahtarı (token) yalnızca hesap
+    sahibinin kendi bilgisayarında ve kendi özel kod deposunun şifreli ortam
+    değişkenlerinde saklanır. Üçüncü taraflarla paylaşılmaz, satılmaz,
+    reklam amacıyla kullanılmaz.
+  </p>
+  <p>
+    Google'dan alınan bilgilerin kullanımı
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google
+    API Hizmetleri Kullanıcı Verileri Politikası</a>'na ve politikanın Sınırlı
+    Kullanım gerekliliklerine uygundur.
+  </p>
+
+  <h2>Facebook erişimi</h2>
+  <p>
+    Araç ayrıca Facebook Graph API üzerinden, yine yalnızca hesap sahibinin
+    kendi Facebook Sayfası'na video yüklemek için yetki kullanır. Başka
+    kullanıcıların profillerine, arkadaş listelerine veya içeriklerine
+    erişmez.
+  </p>
+
+  <h2>Yayınlanan içerik</h2>
+  <p>
+    Videolarda yer alan ayet metinleri ve Türkçe mealler
+    <a href="https://alquran.cloud/api" rel="noopener">alquran.cloud</a>
+    API'sinden alınır ve değiştirilmeden gösterilir. Arka plan görüntüleri
+    <a href="https://www.pexels.com/license/" rel="noopener">Pexels lisansı</a>
+    kapsamındaki telifsiz videolardan seçilir.
+  </p>
+
+  <h2>Veri saklama ve silme</h2>
+  <p>
+    Saklanan tek bilgi, hangi ayetlerin daha önce paylaşıldığına dair bir
+    listedir; bu liste kişisel veri içermez. Yetkilendirme anahtarları
+    istenildiği an Google hesap ayarlarından
+    (<a href="https://myaccount.google.com/permissions" rel="noopener">Üçüncü
+    taraf uygulamalar</a>) iptal edilebilir.
+  </p>
+
+  <h2>Değişiklikler</h2>
+  <p>
+    Bu politika güncellenirse yukarıdaki tarih değiştirilir.
+  </p>
+
+  <h2>İletişim</h2>
+  <p>
+    Sorularınız için: <a href="mailto:emiralpozdemir8@gmail.com">emiralpozdemir8@gmail.com</a>
+  </p>
+
+  <footer>İslam Dünyam · kişisel yayın projesi</footer>
+</div>
+</body>
+</html>

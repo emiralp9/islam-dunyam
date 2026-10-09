@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İslam Dünyam</title>
+<meta name="description" content="Kur'an-ı Kerim ayetlerini ve meallerini kısa videolar hâlinde paylaşan sayfa.">
+<style>
+  :root{
+    --ink:#0a1a18; --ink-2:#17362f; --cream:#fffcf0;
+    --gold:#c6a96d; --muted:#b9c4bf; --line:rgba(198,169,109,.28);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:linear-gradient(170deg,var(--ink),var(--ink-2));
+    color:var(--cream); min-height:100vh;
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.7;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:72px 16px 64px}
+  .mark{width:84px;height:84px;display:block;margin:0 auto 26px}
+  h1{font-size:2.3rem; text-align:center; margin:0 0 6px; letter-spacing:.01em}
+  .tag{text-align:center; color:var(--gold); margin:0 0 42px; font-size:1.02rem}
+  .rule{border:0;border-top:1px solid var(--line); margin:40px 0}
+  h2{font-size:1.18rem; color:var(--gold); margin:38px 0 10px; font-weight:600}
+  p{color:var(--muted); margin:0 0 16px}
+  ul{color:var(--muted); padding-left:20px; margin:0 0 16px}
+  li{margin:7px 0}
+  a{color:var(--cream); text-decoration:none; border-bottom:1px solid var(--line)}
+  a:hover{border-bottom-color:var(--gold)}
+  .links{display:flex; flex-wrap:wrap; gap:12px; justify-content:center; margin-top:34px}
+  .btn{
+    border:1px solid var(--line); border-radius:10px; padding:11px 20px;
+    color:var(--cream); font-size:.95rem; transition:border-color .2s,background .2s;
+  }
+  .btn:hover{border-color:var(--gold); background:rgba(198,169,109,.08)}
+  footer{text-align:center; color:#7e8d88; font-size:.85rem; margin-top:56px}
+  @media (max-width:520px){ h1{font-size:1.85rem} .wrap{padding:52px 16px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+    <g fill="none" stroke="#c6a96d" stroke-width="2.4">
+      <rect x="26" y="26" width="48" height="48"/>
+      <rect x="26" y="26" width="48" height="48" transform="rotate(45 50 50)"/>
+    </g>
+    <path fill="#fffcf0" d="M50 28l5.2 13.3L68 36l-5.2 13.1L76 50l-13.2 1L68 64l-12.8-5.3L50 72l-5.2-13.3L32 64l5.2-13L24 50l13.2-.9L32 36l12.8 5.3z"/>
+    <circle cx="50" cy="50" r="7" fill="#0a1a18"/>
+  </svg>
+
+  <h1>İslam Dünyam</h1>
+  <p class="tag">Her gün bir ayet ve meali</p>
+
+  <p>
+    Kur'an-ı Kerim'den ayetleri, Diyanet meali ve kaynak referansıyla birlikte
+    kısa videolar hâlinde paylaşan bir sayfadır. Videolar otomatik olarak
+    üretilir ve belirlenen saatlerde yayınlanır.
+  </p>
+
+  <h2>İçerik ilkeleri</h2>
+  <ul>
+    <li>Ayet metinleri birebir gösterilir; eklenmez, çıkarılmaz, yorumlanmaz.</li>
+    <li>Türkçe meal olarak yalnızca resmî Diyanet meali kullanılır.</li>
+    <li>Her paylaşımda sure ve ayet numarası açıkça belirtilir.</li>
+    <li>İhtilaflı fıkhî yorum ve tefsir içeriği yer almaz.</li>
+    <li>Arka plan görüntüleri telifsiz kaynaklardan alınır.</li>
+  </ul>
+
+  <hr class="rule">
+
+  <h2>Teknik</h2>
+  <p>
+    Videolar açık kaynaklı bir otomasyon aracıyla üretilir. Araç; ayet metnini
+    ve mealini <a href="https://alquran.cloud/api" rel="noopener">alquran.cloud</a>
+    API'sinden, tilaveti aynı kaynağın ses sürümünden, arka plan görüntülerini
+    <a href="https://www.pexels.com" rel="noopener">Pexels</a>'ten alır; videoyu
+    birleştirip ilgili hesaplara yükler.
+  </p>
+
+  <div class="links">
+    <a class="btn" href="https://www.facebook.com/1321287191074268" rel="noopener">Facebook sayfası</a>
+    <a class="btn" href="privacy.html">Gizlilik politikası</a>
+  </div>
+
+  <footer>İslam Dünyam · kişisel yayın projesi</footer>
+</div>
+</body>
+</html>
